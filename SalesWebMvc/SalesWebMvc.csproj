@@ -5,24 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Views\Departaments\**" />
-    <Content Remove="Views\Departaments\**" />
-    <EmbeddedResource Remove="Views\Departaments\**" />
-    <None Remove="Views\Departaments\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Controllers\DepartamentsController.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views\Departaments\Create.cshtml" />
-    <None Include="Views\Departaments\Delete.cshtml" />
-    <None Include="Views\Departaments\Details.cshtml" />
-    <None Include="Views\Departaments\Edit.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore" Version="2.1.7" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.1.3" />
