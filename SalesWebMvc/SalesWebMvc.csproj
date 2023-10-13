@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.1</TargetFramework>
@@ -13,6 +13,13 @@
 
   <ItemGroup>
     <Compile Remove="Controllers\DepartamentsController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Departaments\Create.cshtml" />
+    <None Include="Views\Departaments\Delete.cshtml" />
+    <None Include="Views\Departaments\Details.cshtml" />
+    <None Include="Views\Departaments\Edit.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
