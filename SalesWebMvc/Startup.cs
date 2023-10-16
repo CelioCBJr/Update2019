@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using SalesWebMvc.Models;
 using SalesWebMvc.Data;
 using SalesWebMvc.Services;
+using SalesWebMvc.Models.ViewModels;
 
 namespace SalesWebMvc
 {
