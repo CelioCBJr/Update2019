@@ -8,19 +8,19 @@ namespace SalesWebMvc.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropForeignKey(
-                name: "FK_Seller_Departament_DepartamentId",
+                name: "FK_Seller_Department_DepartmentId",
                 table: "Seller");
 
             migrationBuilder.DropTable(
-                name: "Departament");
+                name: "Department");
 
             migrationBuilder.RenameColumn(
-                name: "DepartamentId",
+                name: "DepartmentId",
                 table: "Seller",
                 newName: "DepartmentId");
 
             migrationBuilder.RenameIndex(
-                name: "IX_Seller_DepartamentId",
+                name: "IX_Seller_DepartmentId",
                 table: "Seller",
                 newName: "IX_Seller_DepartmentId");
 
@@ -58,15 +58,15 @@ namespace SalesWebMvc.Migrations
             migrationBuilder.RenameColumn(
                 name: "DepartmentId",
                 table: "Seller",
-                newName: "DepartamentId");
+                newName: "DepartmentId");
 
             migrationBuilder.RenameIndex(
                 name: "IX_Seller_DepartmentId",
                 table: "Seller",
-                newName: "IX_Seller_DepartamentId");
+                newName: "IX_Seller_DepartmentId");
 
             migrationBuilder.CreateTable(
-                name: "Departament",
+                name: "Department",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -75,14 +75,14 @@ namespace SalesWebMvc.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Departament", x => x.Id);
+                    table.PrimaryKey("PK_Department", x => x.Id);
                 });
 
             migrationBuilder.AddForeignKey(
-                name: "FK_Seller_Departament_DepartamentId",
+                name: "FK_Seller_Department_DepartmentId",
                 table: "Seller",
-                column: "DepartamentId",
-                principalTable: "Departament",
+                column: "DepartmentId",
+                principalTable: "Department",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
         }
