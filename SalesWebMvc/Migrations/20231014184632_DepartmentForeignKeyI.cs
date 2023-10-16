@@ -25,7 +25,7 @@ namespace SalesWebMvc.Migrations
                 name: "FK_Seller_Departament_DepartamentId",
                 table: "Seller",
                 column: "DepartamentId",
-                principalTable: "Departament",
+                principalTable: "Department",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Cascade);
         }
@@ -52,7 +52,7 @@ namespace SalesWebMvc.Migrations
                 name: "FK_Seller_Departament_DepartamentId",
                 table: "Seller",
                 column: "DepartamentId",
-                principalTable: "Departament",
+                principalTable: "Department",
                 principalColumn: "Id",
                 onDelete: ReferentialAction.Restrict);
         }

@@ -26,7 +26,7 @@ namespace SalesWebMvc.Migrations
                     table.ForeignKey(
                         name: "FK_Seller_Departament_DepartamentId",
                         column: x => x.DepartamentId,
-                        principalTable: "Departament",
+                        principalTable: "Department",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
